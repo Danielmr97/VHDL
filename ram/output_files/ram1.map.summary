@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Mar 19 22:30:28 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : ram1
+Top-level Entity Name : ram1
+Family : MAX 10
+Total logic elements : 30
+    Total combinational functions : 10
+    Dedicated logic registers : 23
+Total registers : 23
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
