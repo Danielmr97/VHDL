@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity microALU is
+port(
+	clk, reset, pausa: in std_logic;
+	bus_datosA: out std_logic_vector (2 downto 0);
+	bus_datosB: out std_logic_vector (2 downto 0);
+	datosdirc: out std_logic_vector (3 downto 0);
+	cin: out std_logic;
+	s: out std_logic_vector (1 downto 0);
+	s2: out std_logic );
+end entity;
+
+architecture bhv of microALU is
+signal cableclk:std_logic;
+signal cabledatos:std_logic_vector(15 downto 0);
+begin
+u1: entity work.relojlento(arqrelojlento) port map (clk, cableclk);
+u2: entity work.fetch(bhv) port map (cableclk, reset, pausa, cabledatos);
+u3: entity work.decode(bhv) port map (cabledatos, bus_datosA, bus_datosB, datosdirc, cin, s, s2);
+
+end architecture;

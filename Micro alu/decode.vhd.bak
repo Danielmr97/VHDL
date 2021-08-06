@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decode is 
+port(
+bus_instruc: in std_logic_vector (15 downto 0);
+bus_datosA, bus_datosB : out std_logic_vector(2 downto 0);
+bus_datosdirc: out std_logic_vector(15 downto 0)
+cin: out std_logic;
+s: out std_logic_vector(1 downto 0);
+s2: out std_logic);
+end;
+
+architecture arq of decode is
+	begin 
+	s <= bus_intruc(11 downto 0);
+	cin <= bus_instruc(12);
+	s2 <= bus_instruc(13);
+	datosdirc <= bus_intruc(3 downto 0);
+	signal cablecount: std_logic_vector(3 downto 0);
+	begin
+		u1: entity work.romA(arq) port map (bus_instruct(9 downto 7),bus_datosA );
+		u2: entity work.romB(arq) port map (bus_instruct(6 downto 7), bus_datosB);
+end;
