@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux4x1 is
+port(
+	ent: in std_logic_vector(1 downto 0);
+	sal: out std_logic
+
+);
+end;
+
+architecture arq of mux4x1 is
+begin
+	with ent select
+	
+	sal <= '1' when "01",
+			 '0' when "10",
+			 '1' when "11",
+			 '0' when others;
+end;

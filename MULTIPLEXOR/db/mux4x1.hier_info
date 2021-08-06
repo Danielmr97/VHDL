@@ -1,0 +1,18 @@
+|mux4x1
+ent[0] => Mux2.IN3
+ent[0] => Mux2.IN2
+ent[1] => Mux1.IN3
+ent[1] => Mux1.IN2
+ent[2] => Mux0.IN3
+ent[2] => Mux0.IN2
+sel[0] => Mux0.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux2.IN5
+sel[1] => Mux0.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux2.IN4
+salmux[0] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salmux[1] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salmux[2] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
