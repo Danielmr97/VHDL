@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bus_dato[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[3]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[4]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[5]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dato[6]",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dir[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cs",
+					"strict" : false
+				},
+				{
+					"name" : "bus_dir[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
