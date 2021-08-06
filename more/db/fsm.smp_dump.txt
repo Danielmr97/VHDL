@@ -1,0 +1,8 @@
+
+State Machine - |fsm|estado
+Name estado.q4 estado.q3 estado.q2 estado.q1 estado.q0 
+estado.q0 0 0 0 0 0 
+estado.q1 0 0 0 1 1 
+estado.q2 0 0 1 0 1 
+estado.q3 0 1 0 0 1 
+estado.q4 1 0 0 0 1 
