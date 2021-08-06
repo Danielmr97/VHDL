@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity topAuto is
+port(
+clkl, reset: in std_logic;
+count: out std_logic_vector (3 downto 0)
+);
+end ;
+
+architecture arqcont of topAuto is
+signal cableclockcont: std_logic;
+signal cablealu: std_logic_vector(3 downto 0);
+
+begin
+u1: entity work.relojlento(arqrelojlento) port map (clkl, cableclockcont);
+u2: entity work.cont4(behavior) port map (cableclockcont, reset, count);
+u3: entity work.ALU(arqALU) port map (a,b,cablealu (1 downto 0), cablealu(3),cablealu(2),F,count);
+end architecture;
